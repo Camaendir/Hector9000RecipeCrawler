@@ -1,0 +1,5 @@
+addNewIngredients -->
+https://makemeacocktail.com/scripts/ajaxcalls.php?ajaxcall=addToMyBar
+form-data:
+ajaxurl		scripts/ajaxcalls.php?ajaxcall=addToMyBar
+iid			%ID%
