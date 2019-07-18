@@ -66,6 +66,7 @@ def savejson(drinklist, Saveindex=None):
 
 def loaddrink(url, drinklist, shortdrinklist):
     json = ""
+    raw_ingredients = ("gin", "rum", "vodka", "tequila", "tonic", "coke", "orange juice", "grenadine", "mate")
     ingredients = []
     try:
         name = url.replace("https://www.socialandcocktail.co.uk/cocktails/", "").replace("/", "")
@@ -74,7 +75,9 @@ def loaddrink(url, drinklist, shortdrinklist):
         itemlist = html.find(id="content-to-load").p
         for ingredient in itemlist.string.split(","):
             if "ml" not in ingredient:
-                continue
+                for ing in raw_ingredients:
+                    if ing in ingredient.lower():
+                        ingredients.append({"ing_ammount": "0ml", "ing_name": ingredient, "look": True})
             split = ingredient.split("ml ")
             ingredients.append({"ing_ammount": split[0] + "ml", "ing_name": split[1]})
         drinklist.append({"drink_name": name, "ingredients": ingredients})

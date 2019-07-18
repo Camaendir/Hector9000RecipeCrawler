@@ -1,0 +1,384 @@
+{
+    "Drinks": [
+        {
+            "color": "black",
+            "name": "abbey-cocktail",
+            "recipe": [
+                {
+                    "amt": 113,
+                    "name": "gin"
+                },
+                {
+                    "amt": 85,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "alibi",
+            "recipe": [
+                {
+                    "amt": 133,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 66,
+                    "name": "gin"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "black-cherry-breezer",
+            "recipe": [
+                {
+                    "amt": 181,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 18,
+                    "name": "gren"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "black-rose",
+            "recipe": [
+                {
+                    "amt": 100,
+                    "name": "tequila"
+                },
+                {
+                    "amt": 100,
+                    "name": "vodka"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "brass-monkey",
+            "recipe": [
+                {
+                    "amt": 66,
+                    "name": "rum"
+                },
+                {
+                    "amt": 66,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 66,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "caribbean-sunrise",
+            "recipe": [
+                {
+                    "amt": 75,
+                    "name": "rum"
+                },
+                {
+                    "amt": 100,
+                    "name": "oj"
+                },
+                {
+                    "amt": 25,
+                    "name": "gren"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "cuban-rose",
+            "recipe": [
+                {
+                    "amt": 129,
+                    "name": "rum"
+                },
+                {
+                    "amt": 68,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "draculas-kiss",
+            "recipe": [
+                {
+                    "amt": 131,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 65,
+                    "name": "gren"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "fizzy-peach",
+            "recipe": [
+                {
+                    "amt": 33,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 166,
+                    "name": "tonic"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "ginger-martini",
+            "recipe": [
+                {
+                    "amt": 98,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 98,
+                    "name": "gin"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "harvey-wallbanger",
+            "recipe": [
+                {
+                    "amt": 66,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 133,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "hifi",
+            "recipe": [
+                {
+                    "amt": 66,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 133,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "hurricane",
+            "recipe": [
+                {
+                    "amt": 100,
+                    "name": "rum"
+                },
+                {
+                    "amt": 100,
+                    "name": "rum"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "la-coloniale",
+            "recipe": [
+                {
+                    "amt": 98,
+                    "name": "gin"
+                },
+                {
+                    "amt": 98,
+                    "name": "gin"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "mex-tini",
+            "recipe": [
+                {
+                    "amt": 79,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 79,
+                    "name": "tequila"
+                },
+                {
+                    "amt": 39,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "october-screwdriver",
+            "recipe": [
+                {
+                    "amt": 100,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 100,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "popper",
+            "recipe": [
+                {
+                    "amt": 100,
+                    "name": "tequila"
+                },
+                {
+                    "amt": 100,
+                    "name": "gin"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "porch-crawler",
+            "recipe": [
+                {
+                    "amt": 100,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 100,
+                    "name": "rum"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "russian-sunrise",
+            "recipe": [
+                {
+                    "amt": 60,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 120,
+                    "name": "oj"
+                },
+                {
+                    "amt": 20,
+                    "name": "gren"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "screw-up",
+            "recipe": [
+                {
+                    "amt": 66,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 133,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "screwdriver",
+            "recipe": [
+                {
+                    "amt": 66,
+                    "name": "vodka"
+                },
+                {
+                    "amt": 133,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "shirley-temple",
+            "recipe": [
+                {
+                    "amt": 133,
+                    "name": "gin"
+                },
+                {
+                    "amt": 66,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "tequila-sunrise",
+            "recipe": [
+                {
+                    "amt": 76,
+                    "name": "tequila"
+                },
+                {
+                    "amt": 123,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "the-monkey-gland",
+            "recipe": [
+                {
+                    "amt": 98,
+                    "name": "gin"
+                },
+                {
+                    "amt": 98,
+                    "name": "oj"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "tn-t",
+            "recipe": [
+                {
+                    "amt": 66,
+                    "name": "tequila"
+                },
+                {
+                    "amt": 133,
+                    "name": "tonic"
+                }
+            ]
+        },
+        {
+            "color": "black",
+            "name": "un-goa",
+            "recipe": [
+                {
+                    "amt": 96,
+                    "name": "tequila"
+                },
+                {
+                    "amt": 96,
+                    "name": "rum"
+                }
+            ]
+        }
+    ]
+}
