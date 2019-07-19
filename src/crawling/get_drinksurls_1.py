@@ -1,7 +1,8 @@
 from six.moves import urllib
 from bs4 import BeautifulSoup
 
-# get_drinks.py
+# get_drinksurls_1.py
+# Saving all Drink URL's in a txt file
 
 baseurl = "https://www.socialandcocktail.co.uk/cocktail-recipes/page/%PAGE%/?sort_by=title&sort_name=Name&custom_sort=0&sort=ASC"
 pagetext = "%PAGE%"
@@ -24,26 +25,24 @@ def load_page(page):
 	return False
 
 
-def main(safefile=None):
-	if safefile is None:
-		safefile = False
-	index = 1
+def main():
+	print("Gathering Drink Urls")
+	index = 0
 	while True:
+		index = index + 1
 		print("Load page Nr. %d" % index)
 		if load_page(index):
 			break
-		index = index + 1
-	if safefile:
-		print("Saving %d urls to file" % len(drinkurls))
-		file = open("drinkurls.txt", "w+")
-		for i in drinkurls:
-			file.write(i)
-			file.write("\n")
-		file.close()
-	else:
-		print("returning %d urls" % len(drinkurls))
-		return drinkurls
+	print("Loaded %d Pages" % index)
+	print("Saving %d Urls to file" % len(drinkurls))
+	file = open("../Savefiles/drinkurls.txt", "w+")
+	for i in drinkurls:
+		file.write(i)
+		file.write("\n")
+	file.close()
+	print("Drink-Url-Gathering complete")
+	return drinkurls
 
 
 if __name__ == "__main__":
-	main(True)
+	main()

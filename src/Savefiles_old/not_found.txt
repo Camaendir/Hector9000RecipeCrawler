@@ -42,7 +42,7 @@
     "Lemon Juice",
     "Gomme syrup",
     "Beer",
-    "Cola",
+    Cola",
     "Amaretto",
     "Cr\u00e8me de Cacao",
     "Half & Half",

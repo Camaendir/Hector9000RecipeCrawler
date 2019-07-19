@@ -1,10 +1,16 @@
 import json
-
+import os.path
+from src.cleaning.clean_json_5 import main as clean_json
 # ToDrinkList.py
 
+
 def get_Drinks():
+    print("Loading Drinks from Drink Safefile")
+    if not os.path.isFile("Savefiles/Drinks.drk"):
+        print("Drinks Savefile not found. Creating one.")
+        clean_json()
     DrinkList = []
-    with open("Drinks.txt", "r") as f:
+    with open("Savefiles/Drinks.drk", "r") as f:
         items = json.loads(f.read())["Drinks"]
         for item in items:
             Drink = {}
