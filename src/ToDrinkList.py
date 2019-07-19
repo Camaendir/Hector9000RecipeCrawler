@@ -1,16 +1,17 @@
 import json
 import os.path
 from src.cleaning.clean_json_5 import main as clean_json
+from pathlib import Path
 # ToDrinkList.py
 
 
 def get_Drinks():
     print("Loading Drinks from Drink Safefile")
-    if not os.path.isFile("Savefiles/Drinks.drk"):
-        print("Drinks Savefile not found. Creating one.")
+    if not os.path.isfile(Path("Savefiles/Drinks.drk")):
+        print("Drinks Savefiles not found. Creating one.")
         clean_json()
     DrinkList = []
-    with open("Savefiles/Drinks.drk", "r") as f:
+    with open(Path("../Savefiles/Drinks.drk"), "r") as f:
         items = json.loads(f.read())["Drinks"]
         for item in items:
             Drink = {}
@@ -21,3 +22,7 @@ def get_Drinks():
                 Drink["recipe"].append(("ingr", ing["name"], ing["amt"]))
             DrinkList.append(Drink)
         return DrinkList
+
+
+if __name__ == "__main__":
+    get_Drinks()

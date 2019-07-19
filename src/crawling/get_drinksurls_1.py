@@ -1,6 +1,6 @@
 from six.moves import urllib
 from bs4 import BeautifulSoup
-
+from pathlib import Path
 # get_drinksurls_1.py
 # Saving all Drink URL's in a txt file
 
@@ -35,7 +35,7 @@ def main():
 			break
 	print("Loaded %d Pages" % index)
 	print("Saving %d Urls to file" % len(drinkurls))
-	file = open("../Savefiles/drinkurls.txt", "w+")
+	file = open(Path("../Savefiles/drinkurls.txt"), "w+")
 	for i in drinkurls:
 		file.write(i)
 		file.write("\n")

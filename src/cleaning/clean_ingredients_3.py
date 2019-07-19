@@ -1,18 +1,19 @@
 import json
 import os.path
 from src.crawling.get_drink_2 import main as get_drinks
+from pathlib import Path
 # clean_ingredients_3.py
 # cleaning up strings and sorting the ingredients more
 
 
 def main():
     print("Cleaning Ingredients from raw Drink Data")
-    if not os.path.isfile("../Savefiles/drinks_raw_full.txt"):
+    if not os.path.isfile(Path("../Savefiles/drinks_raw_full.txt")):
         print("Could not find raw Drink data. Gathering Drink data. This may take a while (ca. 10-15 minutes)" +
               " and will stress your internet connection")
         get_drinks()
     amt_def = [(10, "a small splash", "a splash", "splash")]
-    text = open("../Savefiles/drinks_raw_full.txt", "r").read()
+    text = open(Path("../Savefiles/drinks_raw_full.txt"), "r").read()
     items = json.loads(text)["items"]
     index = 0
     not_found_list = []
@@ -68,11 +69,11 @@ def main():
                     ing["ing_name"] = loc_name
             else:
                 print("Something went wrong! Body: %s" % ing["body"])
-    with open("../Savefiles/drinks_C1.txt", "w+") as f:
+    with open(Path("../Savefiles/drinks_C1.txt"), "w+") as f:
         f.write(json.dumps({"items": items},  indent=4, sort_keys=True))
-    with open("../Savefiles/not_found.txt", "w+") as f:
+    with open(Path("../Savefiles/not_found.txt"), "w+") as f:
         f.write(json.dumps(not_found_list,  indent=4, sort_keys=True))
-    with open("../Savefiles/definition.txt", "w+") as f:
+    with open(Path("../Savefiles/definition.txt"), "w+") as f:
         f.write(json.dumps(definitions, indent=4, sort_keys=True))
     print("Cleaned Ingredients from %d Drinks" % index)
 
